@@ -45,6 +45,21 @@ h1 {
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
+.hero {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 22px rgba(0,0,0,.4);
+}
+
 h2 {
   color: var(--accent-dim);
   margin-top: 24px;
@@ -85,4 +100,6 @@ a:hover { filter: brightness(1.1); }
 
 @media (max-width: 600px) {
   .terminal { padding: 20px; }
+  .hero { align-items: flex-start; }
+  .avatar { width: 76px; height: 76px; border-radius: 12px; }
 }
